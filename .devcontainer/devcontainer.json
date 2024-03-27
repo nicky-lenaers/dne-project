@@ -1,0 +1,42 @@
+{
+  "name": "development",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.10",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/poetry:2": {
+      "version": "1.8.1"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.tabSize": 2,
+        "editor.indentSize": "tabSize",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.wordBasedSuggestions": "off",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "always"
+        },
+        "eslint.validate": ["json"],
+        "[python]": {
+          "diffEditor.ignoreTrimWhitespace": false,
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "always",
+            "source.organizeImports": "always"
+          }
+        },
+        "python.analysis.indexing": true,
+        "python.analysis.autoImportCompletions": true
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "esbenp.prettier-vscode",
+        "tamasfe.even-better-toml",
+        "charliermarsh.ruff"
+      ]
+    }
+  }
+}
