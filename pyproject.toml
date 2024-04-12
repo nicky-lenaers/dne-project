@@ -19,6 +19,7 @@ tianshou = "^0.5.1"
 transformers = "^4.39.1"
 accelerate = "^0.28.0"
 matplotlib = "^3.8.4"
+seaborn = "^0.13.2"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
